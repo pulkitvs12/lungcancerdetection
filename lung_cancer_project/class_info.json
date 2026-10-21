@@ -1,0 +1,32 @@
+{
+    "classes": [
+        "adenocarcinoma",
+        "large_cell_carcinoma",
+        "normal",
+        "squamous_cell_carcinoma"
+    ],
+    "class_indices": {
+        "adenocarcinoma": 0,
+        "large_cell_carcinoma": 1,
+        "normal": 2,
+        "squamous_cell_carcinoma": 3
+    },
+    "input_sizes": {
+        "ResNet50": [
+            224,
+            224
+        ],
+        "MobileNetV2": [
+            224,
+            224
+        ],
+        "InceptionV3": [
+            299,
+            299
+        ],
+        "DenseNet121": [
+            224,
+            224
+        ]
+    }
+}

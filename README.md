@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🫁 PulmoScan AI: Lung Cancer Histopathology & CT Detection System
+# 🫁 Lung Cancer Detection: Histopathology & CT Detection System
 ### *Multi-Architecture Deep Learning Ensemble for Precision Pulmonary Oncology*
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -21,7 +21,7 @@
 
 ## 📌 Project Overview
 
-**PulmoScan AI** is a production-ready artificial intelligence application engineered for rapid detection, classification, and subtype stratification of thoracic images (Histopathology biopsy slides and Chest CT scans). 
+**Lung Cancer Detection** is a production-ready artificial intelligence application engineered for rapid detection, classification, and subtype stratification of thoracic images (Histopathology biopsy slides and Chest CT scans). 
 
 The platform concurrent-evaluates pulmonary tissue across four independent deep Convolutional Neural Network architectures (**ResNet50**, **MobileNetV2**, **InceptionV3**, and **DenseNet121**) and synthesizes their predictions via **democratic majority voting**.
 
@@ -38,12 +38,12 @@ The system differentiates between four histological categories:
 
 Lung cancer remains the **leading cause of cancer-related mortality globally**, accounting for approximately **1.8 million deaths annually**. The critical clinical challenges include:
 
-| Clinical Challenge | How PulmoScan AI Solves It |
+| Clinical Challenge | How Lung Cancer Detection Solves It |
 | :--- | :--- |
 | **Late-Stage Discovery** | Lung cancer is predominantly asymptomatic during early phases. Automated computer-aided triage assists clinicians in rapidly detecting minute neoplastic changes before distant metastasis occurs. |
-| **Histological Overlap in Subtypes** | Non-Small Cell Lung Cancer (NSCLC) subtypes (adenocarcinoma, squamous cell, and large cell) can share ambiguous architectural features on standard H&E stains. PulmoScan AI extracts multi-scale cellular textures to stratify subtypes. |
+| **Histological Overlap in Subtypes** | Non-Small Cell Lung Cancer (NSCLC) subtypes (adenocarcinoma, squamous cell, and large cell) can share ambiguous architectural features on standard H&E stains. Lung Cancer Detection extracts multi-scale cellular textures to stratify subtypes. |
 | **Drastically Different Treatment Regimens** | Lung cancer subtypes require distinct clinical strategies: Adenocarcinomas are checked for actionable driver mutations (EGFR, ALK, ROS1) for targeted TKI therapies, whereas anti-angiogenics (e.g., Bevacizumab) are contraindicated in Squamous Cell Carcinoma due to fatal hemoptysis risks. Proper identification is vital. |
-| **Pathologist Workload & Diagnostic Variability** | Pathologists face increasing specimen volume with high inter-observer variability in borderline cases. PulmoScan AI acts as a **second reader**, providing objective probability distributions and flagging discordance. |
+| **Pathologist Workload & Diagnostic Variability** | Pathologists face increasing specimen volume with high inter-observer variability in borderline cases. Lung Cancer Detection acts as a **second reader**, providing objective probability distributions and flagging discordance. |
 | **Single-Model Failure Points** | Relying on a single AI model poses risks of false-positive hallucinations or architecture-specific inductive blind spots. Our **4-model ensemble** computes a quantifiable **concordance rate (50% – 100%)** to gauge algorithmic certainty. |
 
 ---
@@ -72,7 +72,7 @@ Input Image (RGB)
 
 ### 2. The 4 CNN Architectures & Their Specialized Roles
 
-Rather than relying on a single neural network, PulmoScan AI leverages four distinct CNN paradigms, each chosen for its complementary spatial feature-learning methodology:
+Rather than relying on a single neural network, Lung Cancer Detection leverages four distinct CNN paradigms, each chosen for its complementary spatial feature-learning methodology:
 
 ```
                                 ┌────────────────────────────────────────────────────────┐
@@ -371,7 +371,7 @@ Submits a histological or CT slice for 4-model analysis.
 
 ## 📚 Histopathological Reference Guide
 
-For each detected condition, PulmoScan AI links the prediction to the appropriate clinical reference protocol:
+For each detected condition, Lung Cancer Detection links the prediction to the appropriate clinical reference protocol:
 
 ```
 ┌────────────────────────┬─────────────────────────────┬──────────────────────────────┬───────────────────────────────┐
@@ -410,7 +410,7 @@ The web interface categorizes model agreement into three clear clinical tiers:
 ## ⚠️ Academic & Medical Disclaimer
 
 > **IMPORTANT CLINICAL NOTICE:**  
-> **PulmoScan AI** is an academic research and decision-support prototype designed solely for educational, investigative, and workflow enhancement purposes. It is **not** cleared by the FDA or CE-marked as a primary medical diagnostic device. Neural network inferences must **never** replace professional judgment or serve as the solitary basis for surgical, chemotherapeutic, or radiological treatment planning. All diagnostic findings must be corroborated by a board-certified pathologist, thoracic radiologist, and comprehensive clinical immunohistochemistry.
+> **Lung Cancer Detection** is an academic research and decision-support prototype designed solely for educational, investigative, and workflow enhancement purposes. It is **not** cleared by the FDA or CE-marked as a primary medical diagnostic device. Neural network inferences must **never** replace professional judgment or serve as the solitary basis for surgical, chemotherapeutic, or radiological treatment planning. All diagnostic findings must be corroborated by a board-certified pathologist, thoracic radiologist, and comprehensive clinical immunohistochemistry.
 
 ---
 

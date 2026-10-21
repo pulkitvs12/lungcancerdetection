@@ -6,7 +6,7 @@ from backend.services.model_service import model_service
 from backend.services.prediction_service import format_prediction_response
 
 app = FastAPI(
-    title="Lung Cancer AI API",
+    title="Lung Cancer Detection API",
     description="Backend API for Lung Cancer classification models",
     version="1.0.0"
 )
